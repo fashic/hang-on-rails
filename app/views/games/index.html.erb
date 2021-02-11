@@ -1,0 +1,12 @@
+<%= image_pack_tag 'hangman.png', size: '200x200', alt: 'Hangman' %>
+<h1>Hangman</h1>
+
+<ul>
+  <%= render @games %>
+</ul>
+
+<ul>
+  <% @games.each do |game| %>
+    <%= render partial: 'games/game', locals: { game: game } %>
+  <% end %>
+</ul>

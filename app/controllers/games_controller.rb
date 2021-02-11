@@ -8,7 +8,7 @@ class GamesController < ApplicationController
   end
 
   def index
-    
+    @games = Game.sorted
   end
 
   def play
