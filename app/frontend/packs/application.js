@@ -5,6 +5,7 @@
 
 require("@rails/ujs").start()
 import 'bootstrap/dist/js/bootstrap'
+import "../scripts/game";
 
 import '../styles/application'
 
